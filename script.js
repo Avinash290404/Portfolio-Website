@@ -32,10 +32,14 @@ window.addEventListener("scroll", () => {
 });
 
 // === Contact form ===
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-  event.preventDefault();
-  alert("Message sent! Thank you for reaching out.");
-});
+// document.getElementById("contactForm").addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   alert("Message sent! Thank you for reaching out.");
+// });
+
+// Contact Form Submission with EmailJS
+
+
 
 // === Footer back to top ===
 document.getElementById("back-to-top").addEventListener("click", function (e) {

@@ -698,6 +698,11 @@ form .btn {
     }
 }
 
+/* form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+} */
+
 /* footer */
 
 body {

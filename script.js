@@ -18,6 +18,28 @@ window.addEventListener("load", () => {
   }
 });
 
+// Smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    });
+});
+
+// Small click animation for buttons
+document.querySelectorAll('.resume-btn, .view-work-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.classList.add('active');
+        setTimeout(() => btn.classList.remove('active'), 150);
+    });
+});
+
 // === About section scroll animation ===
 window.addEventListener("scroll", () => {
   const cards = document.querySelectorAll(".card-item");

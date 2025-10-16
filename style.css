@@ -83,7 +83,7 @@ body {
 
 /* hero section */
 
-.hero-section {
+/* .hero-section {
     text-align: center;
     background-color: #f4f9fd;
     padding: 120px 40px;
@@ -137,7 +137,71 @@ body {
 .view-work-btn:active {
     background-color: #2f7f6b;
     color: white;
+} */
+
+.hero-section {
+    text-align: center;
+    background-color: #f4f9fd;
+    padding: 120px 40px;
+    width: 100vw;
+    height: 100vh;
 }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.name {
+    margin-top: 12%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+.profession {
+    font-size: 40px;
+    font-weight: 600;
+    color: #38b2ac;
+    margin-top: 10px;
+}
+
+.bio {
+    font-size: 20px;
+    color: #2d3748;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.view-work-btn,
+.resume-btn {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 15px 30px;
+    background-color: #38b2ac;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.view-work-btn:hover,
+.resume-btn:hover {
+    background-color: #2f7f6b;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(47, 127, 107, 0.3);
+}
+
+.view-work-btn:active,
+.resume-btn:active {
+    background-color: #2f7f6b;
+    color: white;
+    transform: scale(0.98);
+}
+
 
 /* about secction */
 body {
